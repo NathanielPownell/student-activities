@@ -1,0 +1,201 @@
+/*
+  Student Name: Nathaniel Pownell
+  Student Name: Colten Pitner
+  Student Name: Charles Koeppen
+  File Name: index.html
+  Date: 01/31/2021 
+*/
+
+/* Css import for google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto&display=swap');
+
+/* css reset styling */
+
+body, header, nav, main, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+/* add margin to specified elements */
+
+header, main, footer {
+    padding: 3%;
+}
+/* navbar styling */
+nav {
+}
+nav ul {
+    width: 100%;
+    margin-top:0;
+    display: inline-flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+}
+li.nav-list {
+    text-align: center;
+    background-color: rgb(2, 31, 13);
+    padding-left: 5%;    
+    padding-right: 5%;
+    padding-top: .8%;
+    padding-bottom: .8%;
+
+}
+li.nav-list a {
+    font-family: "Roboto", sans-serif;
+    color: rgb(218, 218, 218);
+    font-weight: lighter;
+    text-decoration: none;
+}
+li.nav-list:hover{
+    cursor: pointer;
+    background: rgb(48, 56, 45);
+}
+
+/* image styling */
+
+img {
+    border-radius: 6px;
+    max-width: 100%;
+    display: block;
+}
+
+/* Logo Style */
+h1.logo {
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family:  'Arial Narrow Bold', sans-serif;
+    color: rgb(147, 255, 147);
+}
+
+h2 {
+  text-shadow: 5px 5px 15px #000000;
+}
+h3 {
+    color: rgb(120, 155, 120);
+    font-family: "Pangolin", cursive ;
+
+}
+
+main {
+    font-family: "Roboto", sans-serif;
+}
+
+/* header styling */
+header {
+    background-color: rgb(2, 31, 13);
+    
+}
+
+#header-logo{
+    margin: 2%;
+    margin-left: 0;
+    width: 30%;
+}
+
+#hero {
+  display: none;
+  opacity: .6;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+body {
+background: linear-gradient(0deg, rgba(71,108,75,1) 0%, rgba(210,247,217,1) 100%);
+}
+
+.banner {
+  color: rgb(0, 43, 9);
+  background-color: rgb(158, 184, 97);
+  border-radius: 1em;
+}
+.banner h2 {
+  text-shadow: none;
+
+}
+
+
+/* phone design */
+
+@media screen and (max-width: 600px) {
+
+
+    /* navbar for mobile */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    li.nav-list {
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    nav ul li a {
+        font-size: 1.4em;
+    }
+   
+    .column {
+      text-align: center;
+      width: 100%;
+    }
+    
+    .eventsimg {
+      display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Media Queries */
+
+/* tablets ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+
+}
+
+
+/* Desktops  ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+#hero{
+  display: block;
+}
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+#hero{
+  display: block;
+}
+}
+
+/* print ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+#hero{
+  display: block;
+}
+}
