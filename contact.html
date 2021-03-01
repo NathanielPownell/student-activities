@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+  Student Name: Nathaniel Pownell
+  Student Name: Colten Pitner
+  Student Name: Charles Koeppen
+  File Name: template.html
+  Date: 01/31/2021
+  -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <title>Student Activities: Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <header>
+    <div id="header-logo">
+      <a href="/index.html"><img src="/images/logo.png"></a>
+    </div>
+    <div>
+      <h1 class=logo>Student Group Activities</h1>
+      <h3>Learn. Grow. Succeed.</h3>
+    </div>
+  </header>
+  <nav>
+    <ul class="nav-list">
+      <li class="nav-list"><a href="index.html">Home</a></li>
+      <li class="nav-list"><a href="clubs.html">Clubs</a></li> 
+      <li class="nav-list"><a href="events.html">Events</a></li> 
+      <li class="nav-list"><a href="about.html">About</a></li> 
+      <li class="nav-list"><a href="faqs.html">FAQs</a></li>
+      <li class="nav-list"><a href="contact.html">Contact</a></li>
+  </ul>
+  </nav>
+<!-- Use the main area to add the main content to the webpage -->
+  <main>
+    <div class="container">
+    <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="group">Group</label>
+        <select id="group" name="group">
+          <option value="g1">Group 1</option>
+          <option value="g2">Group 2</option>
+          <option value="g3">Group 3</option>
+          <option value="none">None</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Copyright 2021. All Rights Reserved.</p>
+    <p><a href = "mailto: abc@example.com">contact@college.edu</a></p>
+    <p><a href="https://www.ivytech.edu/" target="_blank" rel="noopener noreferrer">ivytech.edu</a></p>
+
+  </footer>
+</body>
+</html>
