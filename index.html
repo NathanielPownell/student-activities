@@ -11,6 +11,8 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -18,6 +20,8 @@
     <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/b50711c3e2.js" crossorigin="anonymous"></script>
+    
   <title>Student Activities: Home</title>
 </head>
 
@@ -44,6 +48,44 @@
 <!-- Use the main area to add the main content to the webpage -->
   <main>
     <div id="welcome">
+      <h1>Important Announcement:</h1>
+      <h2>Covid-19 is dangerous. Know the symptoms. Click the icon to learn about the symptoms.</h2>
+      <div class="announcement">
+        <div class="button1">
+          <audio id="sound1" preload="auto">
+            <source src="media/cough.mp3"></source>
+            <source src="media/cough.ogg"></source>
+            Your browser isn't invited for super fun audio time.
+          </audio>
+          <i class="fas fa-head-side-cough"></i>
+          <p>Cough</p>
+
+          <script>
+            var audio1 = $("#sound1")[0];
+              $(".button1").mouseenter(function() {
+                audio1.play();
+              });
+            </script>
+
+        </div>
+
+        <div class="button2">
+          <audio preload="auto" id="sound2">
+            <source src="media/sneeze.mp3"></source>
+            <source src="media/sneeze.ogg"></source>
+            Your browser isn't invited for super fun audio time.
+          </audio>
+          <i class="fas fa-head-side-mask"></i>
+          <p>Sneeze</p>
+
+          <script>
+            var audio2 = $("#sound2")[0];
+              $(".button2").mouseenter(function() {
+                audio2.play();
+              });
+            </script>
+        </div>
+      </div>
       <p>Thank you for visiting the home page.</p>
       <!-- Hero Image -->
       <div id="hero" class="large desktop">
