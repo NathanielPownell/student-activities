@@ -73,6 +73,7 @@ h1.logo {
 
 h2 {
   text-shadow: 5px 5px 15px #000000;
+  transition: all .5s ease;
 }
 h3 {
     color: rgb(120, 155, 120);
@@ -101,6 +102,19 @@ header {
   opacity: .6;
   box-shadow: 5px 5px 15px 5px #000000;
 }
+
+
+hamburger {
+  display: none;
+  float: right;
+  top: 0;
+}
+
+
+hamburger i {
+  color:rgba(210,247,217,1);
+}
+
 
 body {
 background: linear-gradient(0deg, rgba(71,108,75,1) 0%, rgba(210,247,217,1) 100%);
@@ -156,6 +170,10 @@ input[type=submit]:hover {
   color:rgb(92, 117, 97)
 }
 
+h2:hover{
+  transform:translatex(20px)
+}
+
 .announcement {
   display: flex;
   justify-content: space-evenly;
@@ -171,6 +189,15 @@ video {
 
 
     /* navbar for mobile */
+
+    nav {
+      display: none;
+    }
+
+    hamburger{
+      display:block;
+    }
+
     nav ul {
         display: flex;
         flex-direction: column;
