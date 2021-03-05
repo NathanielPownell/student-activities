@@ -9,7 +9,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="This page is the homepage for the student events orginization.">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -21,12 +22,23 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <script src="https://kit.fontawesome.com/b50711c3e2.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
   <title>Student Activities: Home</title>
 </head>
 
 <body>
   <header>
+    <script>
+      $(document).ready(function(){
+    $("hamburger").click(function(){
+      $("nav").toggle();
+    });
+  });
+    </script>
+    <hamburger>
+      <i class="fas fa-hamburger"></i>
+    </hamburger>
     <div id="header-logo">
       <a href="/index.html"><img src="images/logo.png"></a>
     </div>
@@ -98,7 +110,8 @@
     <p>&copy; Copyright 2021. All Rights Reserved.</p>
     <p><a href = "mailto: abc@example.com">contact@college.edu</a></p>
     <p><a href="https://www.ivytech.edu/" target="_blank" rel="noopener noreferrer">ivytech.edu</a></p>
-
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
   </footer>
 </body>
 </html>
